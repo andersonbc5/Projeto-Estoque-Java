@@ -81,7 +81,7 @@ public class Produto {
                 id +
                 " | Nome: " +
                 nome +
-                " | Preço: " +
+                " | Preço: R$ " +
                 String.format("%.2f", preco) +
                 " | Quantidade em estoque: " +
                 quantidadeEmEstoque;
