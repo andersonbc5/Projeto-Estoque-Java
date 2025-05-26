@@ -98,10 +98,10 @@ public class Program {
         if (produto != null) {
             // Exibe os detalhes do produto encontrado
             System.out.println("\n--- PRODUTO ENCONTRADO ---");
-            System.out.println("ID: " + produto.getId());
-            System.out.println("Nome: " + produto.getNome());
-            System.out.println("Preço: R$" + produto.getPreco());
-            System.out.println("Estoque: " + produto.getQuantidadeEmEstoque());
+            System.out.println("ID: " + produto.getId() +
+            " | Nome: " + produto.getNome() +
+            " | Preço: R$" + String.format("%.2f", produto.getPreco()) +
+            " | Estoque: " + produto.getQuantidadeEmEstoque());
         } else {
             // Mensagem caso o produto não seja encontrado
             System.out.println("Produto não encontrado!");
